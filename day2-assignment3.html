@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Current date </title>
+  <h2>day2-assignment3</h2>
+ </head>
+ <body>
+  <script>
+  var today=new Date();
+  var dd=today.getDate();
+  var mm=today.getMonth()+1;
+  var yyyy=today.getFullYear();
+  if(dd<10)
+  {
+  dd='0'+dd;
+  }
+  if(mm<10)
+  {
+  mm='0'+mm;
+  }
+  today=mm+'-'+dd+'-'+yyyy;
+  document.write(today);
+  today=mm+'/'+dd+'/'+yyyy;
+  document.write(today);
+  today=dd+'-'+mm+'-'+yyyy;
+  document.write(today);
+  today=dd+'/'+mm+'/'+yyyy;
+  document.write(today);
+  </script>
+ </body>
+</html>
